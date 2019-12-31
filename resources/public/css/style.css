@@ -1,0 +1,111 @@
+/* some style */
+
+#app {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html {
+    font-size: 16px;
+    font-family: monospace;
+}
+
+.year {
+    background: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.year-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.year-container > p {
+    text-align: center;
+}
+
+.month {
+    flex: 1;
+    text-align: center;
+}
+
+.day {
+    transition: border .2s, background 0.2s;
+    background-color: #00000034;
+    font-size: .5rem;
+    height: 1.5rem;
+    text-align: center;
+    border: 2px solid #00000034;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.year-container p {
+    user-select: none;
+}
+
+.task {
+    border-left-width: 5px;
+    border-left-style: inset;
+}
+
+.task.complete {
+    border-left-style: outset;
+}
+
+.task.personal {
+    border-left-color: blue;
+}
+
+.task.work {
+    border-left-color: orange;
+}
+
+.task.errand {
+    border-left-color: red;
+}
+
+.day.past {
+    background: #00000060;
+    border: 2px solid #00000010;
+}
+
+
+.day.today {
+    background: #0000ff34;
+}
+
+.day:hover {
+    border-color: black;
+    background: #0000ff70;
+}
+
+.day.selected {
+    border-color: orange;
+}
+
+.time-slicer {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.time-block {
+    flex: 1;
+    height: 2rem;
+    border: 1px solid grey;
+}
+
+.day-index {
+    text-align: center;
+}
+
+.day-index .day.index {
+    text-align: center;
+    border-color: transparent;
+    background: white;
+    user-select: none;
+}
